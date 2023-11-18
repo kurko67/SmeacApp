@@ -1,0 +1,25 @@
+.succefull-container {
+    min-width: 450px;
+    display: flex;
+    justify-content: center;
+    mat-icon {
+        color: #44E040;
+        font-size: 100%;
+        text-align: center;
+        margin-top:400px;
+        transform: scale(8);
+        margin-bottom: 15px;
+    }      
+}
+
+.succefull-text {
+    text-align: center;
+    p {
+        font-family:  'Roboto';
+        color: #d5d5d5;
+        font-size: 30px;
+        text-align: center;
+    }  
+}
+
+

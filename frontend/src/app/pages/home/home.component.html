@@ -1,0 +1,298 @@
+<mat-stepper class="step-conteiner" #stepper [linear]="true" [selectedIndex]="currentPage">
+  <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
+    <form [formGroup]="firstFormGroup">
+      <h2>Does the applicant provide the very broad “high level” situation that they propose for their UAS? Are you able to understand the applicant appropriately…</h2>
+      <p>1. Describes the nature of the company’s business (manufacturer, operator, system integrator, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl1" [(ngModel)]="homeForm.firstForm.firstCtrl1"  onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>2. Defines their geographic operating boundaries (lack of specifics implies very broad NAS access)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl2" required [(ngModel)]="homeForm.firstForm.firstCtrl2" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>3. Describes whether they will launch/fly/recover only over private property with owner’s permission</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl3" required [(ngModel)]="homeForm.firstForm.firstCtrl3" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>4. Defines the minimum and maximum operating altitude of the vehicle</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl4" required [(ngModel)]="homeForm.firstForm.firstCtrl4" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>5. Intends to operate within or beyond Visual Line of Sight (VLOS)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl5" required [(ngModel)]="homeForm.firstForm.firstCtrl5" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>6. Adequately defines command and control link</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl6" required [(ngModel)]="homeForm.firstForm.firstCtrl6" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>7. Supplies information on dimensions, materials & processes necessary to define the vehicle design</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl7" required [(ngModel)]="homeForm.firstForm.firstCtrl7" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>8. Identifies the congestion of their proposed operating area</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl8" required [(ngModel)]="homeForm.firstForm.firstCtrl8" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>9. Identifies the vehicle’s maximum cruise speed</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl9" required [(ngModel)]="homeForm.firstForm.firstCtrl9" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>10. Describes Their Proposed Airspace Classes (A, B, C, D, E, G, F, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl10" required [(ngModel)]="homeForm.firstForm.firstCtrl10" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>11. Defines the Proposed Operating Airspace (character aspects of particular air spaces – regardless of class)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl11" required [(ngModel)]="homeForm.firstForm.firstCtrl11" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>12. Describe location of the control station</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="firstCtrl12" required [(ngModel)]="homeForm.firstForm.firstCtrl12" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>Comments</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Comments</mat-label>
+        <input matInput placeholder="Your Comments" formControlName="firstCtrl13" required [(ngModel)]="homeForm.firstForm.firstCtrl13" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <div>
+        <h5>Page 1 / 5</h5>
+      </div>
+      <div class="button--container">
+        <button class="next--button" matStepperNext (click)="goToNextPage()">NEXT</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required." >
+    <form [formGroup]="secondFormGroup">
+      <h2>UAS General Product Specifications & Concept of Operation (CONOP) Evaluation Worksheet “SMEAC Sheet”</h2>
+      <p>1. Describes the intended mission of the UAS (surveillance, agricultural applicator, cargo delivery, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="secondCtrl1" required [(ngModel)]="homeForm.secondForm.secondCtrl1" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>Comments</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Comments</mat-label>
+        <input matInput placeholder="Your Comments" formControlName="secondCtrl2" required [(ngModel)]="homeForm.secondForm.secondCtrl2" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <div>
+        <h5>Page 2 / 5</h5>
+      </div>
+      <div class="buttons--container">
+        <button class="back--button" mat-button matStepperPrevious (click)="goToPreviousPage()">BACK</button>
+        <button class="next--button" mat-button matStepperNext (click)="goToNextPage()">NEXT</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup" errorMessage="Address is required." >
+    <form [formGroup]="thirdFormGroup">
+      <h2>Does the applicant adequately state how they will “execute” the mission in their particular situation? Are you able to understand if the applicant appropriately …</h2>
+      <p>1. Identifies Airspace Considerations (peculiarities & congestion of particular airspace, special use, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl1" required [(ngModel)]="homeForm.thirdForm.thirdCtrl1" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>2. Gives Launch & Recovery Details/ Location(s)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl2" required [(ngModel)]="homeForm.thirdForm.thirdCtrl2" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>3. Identifies and describes the vehicle’s proximity to people, infrastructure and surface vehicles.</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl3" required [(ngModel)]="homeForm.thirdForm.thirdCtrl3" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>4. Identifies and describes the vehicle’s proximity to other NAS users</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl4" required [(ngModel)]="homeForm.thirdForm.thirdCtrl4" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>5. Identifies whether they want to Fly Into Known Icing (FIKI)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl5" required [(ngModel)]="homeForm.thirdForm.thirdCtrl5" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>6. Identifies the meteorological conditions they want to operate in (Visual/Instrument conditions)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl6" required [(ngModel)]="homeForm.thirdForm.thirdCtrl6" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>7. Identifies the flight rules they want to operate in (Visual / Instrument Flight Rules)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl7" required [(ngModel)]="homeForm.thirdForm.thirdCtrl7" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>8. Describes whether their geographic and airspace boundaries are physically contiguous</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl8" required [(ngModel)]="homeForm.thirdForm.thirdCtrl8" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>9. Identifies the Automation Level (occasional autopilot, 100% autonomous, manual control, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl9" required [(ngModel)]="homeForm.thirdForm.thirdCtrl9" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>10. Identifies minimum crew and support personnel</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl10" required [(ngModel)]="homeForm.thirdForm.thirdCtrl10" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>11. Identifies the role(s) of the crew and support personnel</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl11" required [(ngModel)]="homeForm.thirdForm.thirdCtrl11" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>12. Identifies whether they will fly over people not involved in the operation</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl12" required [(ngModel)]="homeForm.thirdForm.thirdCtrl12" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>13. Identifies any requests for airspace be blocked-off for their exclusive use.</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl13" required [(ngModel)]="homeForm.thirdForm.thirdCtrl13" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>14. Identifies their operator/vehicle ratio (1:1, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl14" required [(ngModel)]="homeForm.thirdForm.thirdCtrl14" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>15. Identifies day and/or night operations</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl15" required [(ngModel)]="homeForm.thirdForm.thirdCtrl15" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>16. Plans for safety of Operator(s) and Observer(s)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl16" required [(ngModel)]="homeForm.thirdForm.thirdCtrl16" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>17. Describes the training level of each team member</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="thirdCtrl17" required [(ngModel)]="homeForm.thirdForm.thirdCtrl17" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>Comments</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Comments</mat-label>
+        <input matInput placeholder="Your Comments" formControlName="thirdCtrl18" required [(ngModel)]="homeForm.thirdForm.thirdCtrl18" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <div>
+        <h5>Page 3 / 5</h5>
+      </div>
+      <div class="buttons--container">
+        <button class="back--button" mat-button matStepperPrevious (click)="goToPreviousPage()">BACK</button>
+        <button class="next--button" mat-button matStepperNext (click)="goToNextPage()">NEXT</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="fourtFormGroup" errorMessage="Address is required.">
+    <form [formGroup]="fourtFormGroup">
+      <h2>Assess how well the applicant builds your understanding of information or instructions pertaining to how and with whom they will coordinate to conduct the operations. Are you able to understand if the applicant appropriately …</h2>
+      <p>1. Describes Community Outreach Plans (Flying / Non-Flying Public, municipalities, airports, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fourtCtrl1" required [(ngModel)]="homeForm.fourtForm.fourtCtrl1" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>2. Describes when/ if flight plans will be filed with Air Traffic Control (VFR/IFR)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fourtCtrl2" required [(ngModel)]="homeForm.fourtForm.fourtCtrl2" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>3. Identifies Liaisons with Air Traffic Control</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fourtCtrl3" required [(ngModel)]="homeForm.fourtForm.fourtCtrl3" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>4. Identifies MISHAP Reporting Procedures</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fourtCtrl4" required [(ngModel)]="homeForm.fourtForm.fourtCtrl4" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>5. Identifies when NOTAMs will be posted</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fourtCtrl5" required [(ngModel)]="homeForm.fourtForm.fourtCtrl5" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>Comments</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Comments</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fourtCtrl6" required [(ngModel)]="homeForm.fourtForm.fourtCtrl6" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <div>
+        <h5>Page 4 / 5</h5>
+      </div>
+      <div class="buttons--container">
+        <button class="back--button" mat-button matStepperPrevious (click)="goToPreviousPage()">BACK</button>
+        <button class="next--button" mat-button matStepperNext (click)="goToNextPage()">NEXT</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="fiveFormGroup" errorMessage="Address is required.">
+    <form [formGroup]="fiveFormGroup" (ngSubmit)="onSubmit()">
+      <h2>Assess how well the applicant builds your understanding of information or instructions pertaining to how and with whom they will coordinate to conduct the operations. Are you able to understand if the applicant appropriately …</h2>
+      <p>1. Describes Communication Between The Operator, Observer and Crew Members (visual, radio, etc.)</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl1" required [(ngModel)]="homeForm.fiveForm.fiveCtrl1" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>2. Describes the Electronic Security of the Control Link</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl2" required [(ngModel)]="homeForm.fiveForm.fiveCtrl2" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>3. Describes the Physical Security of the operator and control station</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl3" required [(ngModel)]="homeForm.fiveForm.fiveCtrl3" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>4. Describes real time situational awareness features</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl4" required [(ngModel)]="homeForm.fiveForm.fiveCtrl4" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>5. Describes the number of operators, and hand-off between control stations (direct/“daisy chain”, etc.) </p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl5" required [(ngModel)]="homeForm.fiveForm.fiveCtrl5" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>6. Describes Lost Link Procedures or loss of Positive Control</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl6" required [(ngModel)]="homeForm.fiveForm.fiveCtrl6" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>7. Describes Communication Expectations w/ATC</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl7" required [(ngModel)]="homeForm.fiveForm.fiveCtrl7" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <p>8. Describes Emergency Procedures</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Answer</mat-label>
+        <input matInput placeholder="Your Answer" formControlName="fiveCtrl8" required [(ngModel)]="homeForm.fiveForm.fiveCtrl8" onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+      </mat-form-field>
+      <div>
+        <h5>Page 5 / 5</h5>
+      </div>
+      <div class="buttons--container">
+        <button class="back--button" mat-button matStepperPrevious (click)="goToPreviousPage()">BACK</button>
+        <button class="done--button" mat-button type="submit" >DONE</button>
+        
+
+      </div>
+    </form>
+  </mat-step>
+</mat-stepper>

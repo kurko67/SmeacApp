@@ -1,0 +1,12 @@
+*.pyc
+**/*.db
+**/tmp
+**/build/*
+backend/.idea
+backend/env
+backend/venv
+*.sublime*
+frontend/.angular/
+frontend/dist/
+frontend/node_modules/
+

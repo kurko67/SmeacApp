@@ -1,0 +1,78 @@
+h2 {
+    color: #275484;
+    font-family: 'Roboto';
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+p {
+    color: #7c7c7c;
+    font-family: 'Roboto';
+    font-size: 17px;
+}
+
+::ng-deep mat-form-field {
+    width: 100%;
+    margin: 3px 0;
+}
+
+::ng-deep .mat-horizontal-stepper-header-container {
+    display: none !important;
+}
+
+::ng-deep .mat-horizontal-content-container {
+    overflow: hidden;
+    padding: 24px 24px 24px 24px;
+}
+
+::ng-deep .mat-form-field-underline {
+    background-color: #A38769 !important;
+    border: 2px;
+}
+
+.button--container {
+    position: absolute;
+    margin-top: 2%;
+    right: 25px;
+    
+
+}
+
+.buttons--container {
+    position: absolute;
+    margin-top: 2%;
+    right: 25px;
+    
+}
+
+.next--button {
+    background-color: #A38769;
+    border-radius: 3px;
+    border: none;
+    width: 110px;
+    height: 50px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.back--button {
+    background-color: #7c7c7c;
+    border-radius: 3px;
+    border: none;
+    width: 110px;
+    height: 50px;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+.done--button {
+    background-color: #275484;
+    border-radius: 3px;
+    border: none;
+    width: 110px;
+    height: 50px;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
